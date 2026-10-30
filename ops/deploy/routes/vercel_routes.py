@@ -14,7 +14,6 @@ as observed, not changed); an unknown path; the copilot answers.
 """
 
 import json
-import re
 import sys
 from pathlib import Path
 

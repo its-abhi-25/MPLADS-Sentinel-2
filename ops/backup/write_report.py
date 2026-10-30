@@ -17,7 +17,7 @@ report = f"""# Restore test report
 
 RESULT: {e['RESULT']}
 
-- **Run at:** {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}
+- **Run at:** {dt.datetime.now(dt.UTC).strftime('%Y-%m-%d %H:%M UTC')}
 - **Procedure:** `ops/backup/restore_test.sh`. It backs up with the scheduled job's own script
   (`ops/backup/backup.sh`), restores into a brand-new PostgreSQL 16 instance, verifies the result,
   then runs the API suites against the restored copy.
